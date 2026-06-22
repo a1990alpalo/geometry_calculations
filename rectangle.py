@@ -1,19 +1,10 @@
-class Rectangle:
-    def __init__(self, length, width):
-        self.length = length
-        self.width = width
+"""Functions for rectangle calculations."""
 
-    def area(self):
-        return self.length * self.width
-
-    def perimeter(self):
-        return 2 * (self.length + self.width)
+def calc_area(width, height):
+    """Calculate and return the area of a rectangle."""
+    return width * height
 
 
-if __name__ == "__main__":
-    rectangle = Rectangle(10, 5)
-
-    print("Rectangle length:", rectangle.length)
-    print("Rectangle width:", rectangle.width)
-    print("Rectangle area:", rectangle.area())
-    print("Rectangle perimeter:", rectangle.perimeter())
+def calc_perimeter(width, height):
+    """Calculate and return the perimeter of a rectangle."""
+    return 2 * (width + height)

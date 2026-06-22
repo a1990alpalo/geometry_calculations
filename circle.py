@@ -1,21 +1,14 @@
+"""Functions for circle calculations."""
+
 import math
 
 
-class Circle:
-    def __init__(self, radius):
-        self.radius = radius
-
-    def area(self):
-        return math.pi * self.radius ** 2
-
-    def circumference(self):
-        return 2 * math.pi * self.radius
+def calc_area(radius):
+    """Calculate and return the area of a circle."""
+    return math.pi * radius ** 2
 
 
-if __name__ == "__main__":
-    circle = Circle(5)
-
-    print("Circle radius:", circle.radius)
-    print("Circle area:", circle.area())
-    print("Circle circumference:", circle.circumference())
+def calc_circumference(radius):
+    """Calculate and return the circumference of a circle."""
+    return 2 * math.pi * radius
 
